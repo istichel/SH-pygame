@@ -36,7 +36,8 @@ while True:
             pygame.quit()
 
     # Spiellogik
-
+        if event.type==KEYDOWN:
+            meinSpiel.tasteGedrueckt(event.key)
     # Spielfeld löschen
     for x in range(FelderX):
         for y in range(FelderY):  
